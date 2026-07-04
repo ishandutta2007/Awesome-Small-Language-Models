@@ -110,3 +110,14 @@ Before updating this workspace layout, let me know how you would like to proceed
 * I can provide a **complete Python code boilerplate using PyTorch and the BitsAndBytes library** demonstrating how to write an automated script that loads an open-weight model into a hardware-fused 4-bit NormalFloat configuration.
 * I can generate a **Markdown matrix table** tracking the explicit parameter scales, token pre-training counts, and architectural layers of the leading open-weight Small Language Models over the past 24 months [INDEX: 15].
 * I can write a detailed technical explanation focusing on the **mathematics of Knowledge Distillation Loss Functions** (Kullback-Leibler divergence alignment over soft logit targets), detailing how parent model intelligence scales down to student networks safely [INDEX: 11].
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Small-Language-Models&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Small-Language-Models&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Small-Language-Models&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Small-Language-Models&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
