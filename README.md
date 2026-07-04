@@ -1,6 +1,10 @@
 <p align="center"><img src="./assets/banner.svg" alt="Banner"></p>
 
 # 🌟 Awesome-Small-Language-Models 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
 ## 🧠 Small Language Models (SLMs): History, Progression, Variants, & Applications
 
 A **Small Language Model (SLM)** is an architectural paradigm in artificial intelligence that prioritises parameter efficiency, computational speed, and edge-device hardware compatibility while aiming to match or exceed the capability density of ultra-large foundation networks. While the early deep learning boom was characterized by a massive inflation of model sizes exceeding hundreds of billions of parameters, SLMs challenge the strict "bigger is always better" assumption. Generally defined as architectures possessing **fewer than 10 billion parameters** (typically ranging from 1B to 8B), modern SLMs are designed using advanced token over-training scaling laws, high-fidelity knowledge distillation, and optimized architectural topologies. This allows them to run natively on localized edge hardware (smartphones, local servers, automobiles) with near-zero latency while retaining competitive logical, semantic, and software engineering capabilities.
