@@ -10,7 +10,11 @@ A **Small Language Model (SLM)** is an architectural paradigm in artificial inte
 The technical progression of small-scale generative modeling has transitioned from restricted task-specific feature encoders to early under-trained decoders, heavily over-trained edge networks, and native reinforcement-learned reasoning engines.
 
 ```mermaid
-[Task Encoders (BERT/DistilBERT, 2018)] ───> [Under-trained Decoders (GPT-2, 2019)] ───> [Inference-Optimal Edge Models (Llama 3 8B, 2024)] ───> [Reasoning SLMs (R1-Distill, Present)](Narrow Discriminative Feature Extract)       (Capacity-Starved Generative Token Pools)         (Trillion-Token Massive Over-training)           (Distilled System 2 Thinking Traces)
+flowchart LR
+    A["Task Encoders (BERT / DistilBERT, 2018)<br/>(Discriminative Representation Learning)"]
+    --> B["Early Decoder LMs (GPT-2, 2019)<br/>(Generative Autoregressive Language Modeling)"]
+    --> C["Inference-Optimized Small LLMs (e.g., Llama 3 8B, 2024)<br/>(Large-Scale Pre-Training for Efficient Inference)"]
+    --> D["Reasoning SLMs (R1-Distill, Present)<br/>(Reasoning-Distilled Small Language Models)"]
 ```
 
 *   **The Task-Specific Distillation Era (BERT / DistilBERT, ~2018–2019)**
@@ -51,7 +55,14 @@ Small Language Models are categorized based on whether their parameters were opt
 To execute advanced reasoning loops cleanly on commodity silicon hardware without triggering Out-of-Memory crashes, SLMs deploy group-wise low-bit numerical quantization layers.
 
 ```mermaid
-The Edge Device Deployment Matrix[High-Precision BF16 Weights] ───> [BitsAndBytes / GGUF Compiler] ───> [Group-Wise Block Quantization (INT4/NF4)]│▼[Low-Latency Local Output] <── [Fused Local Token Sampling] <── [Load Model Shard straight into System RAM]
+flowchart LR
+
+A["High-Precision BF16 Model"]
+--> B["Model Conversion<br/>(BitsAndBytes / GGUF)"]
+--> C["Group-Wise Quantization<br/>(INT4 / NF4)"]
+--> D["Load Quantized Model into System RAM"]
+--> E["Local Token Generation"]
+--> F["Low-Latency Local Inference"]
 ```
 
 *   **Group-Wise Block Quantization (GGUF / AWQ Templates)**
